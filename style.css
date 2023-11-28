@@ -11,12 +11,85 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
-  background-image: linear-gradient(315deg, #7f5a83 0%, #094d7e 74%);
+  background-image: linear-gradient(315deg, #c9bbca 0%, #eea9bf 74%);
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  width: 1000px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 500px;
   height: 600px;
+  padding: 10px;
+  border: 2px solid brown;
+  border-radius: 5px;
+  background-color: rgb(114 182 114);
+}
+
+.calculator {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.title {
+  height: 10%;
+  padding: 10px;
+  color: bisque;
+  text-align: center;
+}
+
+.counting-window {
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+  width: 100%;
+  height: 10%;
+  padding: 0 5px;
+  border: 2px solid goldenrod;
+  border-radius: 5px;
+}
+
+.value {
+  width: 100%;
+  text-align: right;
+  font-size: 32px;
+}
+
+.keyboard {
+  width: 100%;
+  height: 80%;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px
+}
+
+.keyboard > *:nth-child(3n-2):nth-last-of-type(1) {
+  grid-column: span 3;
+}
+
+.number {
+  height: auto;
+  border-radius: 5px;
+  background-color: bisque;
+  box-shadow: none;
+  font-size: 24px;
+}
+
+.result {
+  height: auto;
+  border-radius: 5px;
+  background-color: bisque;
+  box-shadow: none;
+  font-size: 24px;
+}
+
+.reset {
+  height: auto;
+  border-radius: 5px;
+  background-color: bisque;
+  box-shadow: none;
+  font-size: 24px;
 }
