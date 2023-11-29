@@ -23,10 +23,10 @@ const handleOperationChange = (e) => {
       mathOperation.value.slice(-3) !== " % " &&
       length !== 0
     ) {
-      mathOperation.value += ` ${newValue.textContent} `;
+      mathOperation.value += ` ${newValue.value} `;
     }
   } else {
-    mathOperation.value += `${newValue.textContent}`;
+    mathOperation.value += `${newValue.value}`;
   }
 };
 

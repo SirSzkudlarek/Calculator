@@ -55,7 +55,7 @@ body {
 .value {
   width: 100%;
   text-align: right;
-  font-size: 32px;
+  font-size: 32px; 
 }
 
 .keyboard {
@@ -77,6 +77,12 @@ body {
 
 .number:active {
   background-color: #c934bf;
+}
+
+.modulo {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .result {
@@ -124,4 +130,12 @@ body {
 
 .deletePrevNum:active {
   background-color: #edad62;
+}
+
+.fa-delete-left {
+  color: #d75ccf;
+}
+
+.deletePrevNum:active .fa-delete-left {
+  color: #c934bf;
 }
