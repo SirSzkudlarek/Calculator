@@ -16,8 +16,21 @@ body {
 
 .wrapper {
   display: flex;
-  flex-direction: row;
-  gap: 4rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 25px 0;
+}
+
+@media (min-width: 486px) {
+  .wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    width: auto;
+    gap: 4rem;
+    padding: 0;
+  }
 }
 
 .wrapper-calculator {
@@ -25,12 +38,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 500px;
+  width: 95%;
   height: 700px;
   padding: 10px;
   border: 2px solid brown;
   border-radius: 5px;
   background-color: rgb(114 182 114);
+}
+
+@media (min-width: 486px) {
+  .wrapper-calculator {
+    width: 500px;
+  }
 }
 
 .calculator {
@@ -152,12 +171,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 500px;
+  width: 95%;
   height: 700px;
   padding: 10px;
   border: 2px solid brown;
   border-radius: 5px;
   background-color: rgb(114 182 114);
+}
+
+@media (min-width: 486px) {
+  .wrapper-history {
+    width: 500px;
+  }
 }
 
 .history-window {
