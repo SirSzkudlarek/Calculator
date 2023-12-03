@@ -10,11 +10,17 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-image: linear-gradient(315deg, #c9bbca 0%, #eea9bf 74%);
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.wrapper-calculator {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +42,7 @@ body {
 .title {
   height: 10%;
   padding: 10px;
+  font-size: 2em;
   color: bisque;
   text-shadow: 2px 1px brown;
   text-align: center;
@@ -55,7 +62,7 @@ body {
 .value {
   width: 100%;
   text-align: right;
-  font-size: 32px; 
+  font-size: 32px;
 }
 
 .keyboard {
@@ -64,7 +71,7 @@ body {
   padding-top: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px
+  gap: 5px;
 }
 
 .number {
@@ -105,7 +112,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column: span 3;
-  gap: 5px
+  gap: 5px;
 }
 
 .reset {
@@ -138,4 +145,46 @@ body {
 
 .deletePrevNum:active .fa-delete-left {
   color: #c934bf;
+}
+
+.wrapper-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 500px;
+  height: 700px;
+  padding: 10px;
+  border: 2px solid brown;
+  border-radius: 5px;
+  background-color: rgb(114 182 114);
+}
+
+.history-window {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+  border: 2px solid goldenrod;
+  border-radius: 5px;
+  padding: 12px 10px;
+}
+
+.history {
+  width: 100%;
+  height: 100%;
+  background-color: field;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: rgb(133, 133, 133);
+}
+
+.record-item {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.higlight-result-item {
+  color: #d75ccf;
 }

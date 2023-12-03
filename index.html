@@ -11,39 +11,49 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="calculator">
-          <h1 class="title">Calculator</h1>
-          <div class="counting-window">
-            <input readonly type="text" class="value"></p>
-          </div>
-          <div class="keyboard">
-            <div class="prevWrapper">
-              <button class="reset">C</button>
-              <button class="deletePrevNum"><i class="fa-solid fa-delete-left"></i></button>
-            </div>
-            <button value="%" class="number modulo">the rest from division</button>
-            <button value="*" class="number">*</button>
-            <button value="/" class="number">/</button>
-            <button value="1" class="number">1</button>
-            <button value="2" class="number">2</button>
-            <button value="3" class="number">3</button>
-            <button value="4" class="number">4</button>
-            <button value="5" class="number">5</button>
-            <button value="6" class="number">6</button>
-            <button value="7" class="number">7</button>
-            <button value="8" class="number">8</button>
-            <button value="9" class="number">9</button>
-            <button value="0" class="number">0</button>
-            <button value="(" class="number">(</button>
-            <button value=")" class="number">)</button>
-            <button value="+" class="number">+</button>
-            <button value="-" class="number">-</button>
-            <button value="." class="number">.</button>
-            <button class="result">=</button>
-          </div>
+  <div class="wrapper">
+    <div class="wrapper-calculator">
+      <div class="calculator">
+        <h1 class="title">Calculator</h1>
+        <div class="counting-window">
+          <input readonly type="text" class="value"></p>
         </div>
+        <div class="keyboard">
+          <div class="prevWrapper">
+            <button class="reset">C</button>
+            <button class="deletePrevNum"><i class="fa-solid fa-delete-left"></i></button>
+          </div>
+          <button value="%" class="number modulo">the rest from division</button>
+          <button value="*" class="number">*</button>
+          <button value="/" class="number">/</button>
+          <button value="1" class="number">1</button>
+          <button value="2" class="number">2</button>
+          <button value="3" class="number">3</button>
+          <button value="4" class="number">4</button>
+          <button value="5" class="number">5</button>
+          <button value="6" class="number">6</button>
+          <button value="7" class="number">7</button>
+          <button value="8" class="number">8</button>
+          <button value="9" class="number">9</button>
+          <button value="0" class="number">0</button>
+          <button value="(" class="number">(</button>
+          <button value=")" class="number">)</button>
+          <button value="+" class="number">+</button>
+          <button value="-" class="number">-</button>
+          <button value="." class="number">.</button>
+          <button class="result">=</button>
+        </div>
+      </div>
     </div>
+
+    <div class="wrapper-history">
+      <h2 class="title">History</h2>
+      <div class="history-window">
+        <div class="history">
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

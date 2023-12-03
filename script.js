@@ -4,6 +4,18 @@ const resetBtn = document.querySelector(".reset");
 const deletePrevNumBtn = document.querySelector(".deletePrevNum");
 const resultBtn = document.querySelector(".result");
 const mathOperation = document.querySelector(".value");
+const history = document.querySelector(".history");
+
+const createHistoryRecord = (operation, result) => {
+  const record = document.createElement("p");
+  record.classList.add("record-item");
+  const higlightResult = document.createElement("span");
+  higlightResult.classList.add("higlight-result-item");
+  higlightResult.textContent = `${result}`;
+  record.textContent = `${operation} = `;
+  record.append(higlightResult);
+  history.append(record);
+};
 
 const handleOperationChange = (e) => {
   const newValue = e.target.closest(".number");
@@ -51,9 +63,12 @@ const handleDeletePrevNum = () => {
 };
 
 const handleCount = () => {
-  mathOperation.value !== ""
-    ? (mathOperation.value = eval(mathOperation.value))
-    : null;
+  if (mathOperation.value !== "") {
+    createHistoryRecord(mathOperation.value, eval(mathOperation.value));
+    mathOperation.value = eval(mathOperation.value);
+  } else {
+    null;
+  }
 };
 
 window.onerror = function (e) {
